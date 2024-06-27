@@ -27,7 +27,7 @@ async function createUser() {
 
     const username = await askQuestion('유저 이름을 정해주세요: ');
     const password = await askQuestion('비밀번호를 작성해주세요: ');
-    const ip = await askQuestion('IP를 작성해주세요 (예: 111.111.): ');
+    const ip = await askQuestion('IP를 작성해주세요 (예: 127.0.0.1): ');
 
     const ipRegex = /^(localhost|(\d{1,3}\.){1,3}\d{0,3}%?)$/;
     if (!ipRegex.test(ip)) {
